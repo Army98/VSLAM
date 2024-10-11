@@ -38,7 +38,6 @@ def calc_disparity(left_image, right_image):
                 Y = (v - cy) * depth / fy
                 point_cloud.append([X, Y, depth])
 
-    point_cloud = np.array(point_cloud)
 
     cv2.imshow('disparity', disparity_norm)
     cv2.waitKey(0)
